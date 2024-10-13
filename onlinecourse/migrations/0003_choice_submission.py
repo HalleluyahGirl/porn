@@ -28,4 +28,10 @@ class Migration(migrations.Migration):
                 ('enrollment', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='onlinecourse.enrollment')),
             ],
         ),
+        migrations.AddField(
+            model_name='choice',
+            name='content',
+            field=models.CharField(max_length=200),
+)
+
     ]
